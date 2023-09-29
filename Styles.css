@@ -1,73 +1,240 @@
-*{
+* {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Mukta', sans-serif;
 }
 
-.Navigation__section img{
- height: 80px;
- width: 80px;
+.Navigation__section img {
+    height: 80px;
+    width: 80px;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100px;
     padding: 40px 20px;
     box-shadow: 0 2px 0 #d5d5d5;
+
 }
 
-.Navigation__section a{
+.Navigation__section a {
     text-decoration: none;
     color: black;
     font-weight: 700;
-    font-size: small;
+    font-size: 15px;
 }
 
-.Navigation__section_Left{
+.Navigation__section_Left {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
 }
 
-.Navigation__section_Left a:hover{
+.Navigation__section_Left a:hover {
     color: green;
 }
 
-.Navigation__section_Right a:hover{
+.Navigation__section_Right a:hover {
     color: green;
 }
 
-.Navigation__section_Right{
+.Navigation__section_Right {
     display: flex;
-    gap: 30px;
+    gap: 50px;
 }
 
-.Navigation__section_Right_MenuIcon{
+.Navigation__section_Right_MenuIcon {
     height: 20px;
     width: 10px;
     display: none;
 }
 
-@media only screen and (max-width: 800px){
-    .Navigation__section_Left a{
+.Navigation__section_Right_Btns {
+    display: flex;
+    gap: 30px;
+}
+
+.Navigation__section_Right_Btns button {
+    height: 30px;
+    width: 90px;
+    color: black;
+    background: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Navigation__section_Right_Btns .Join_Now_Btn {
+    background-color: black;
+    color: white;
+}
+
+.Navigation__section_Right_Btns .Join_Now_Btn:hover {
+    background-color: rgb(61, 61, 61);
+    transition-delay: 7ms;
+    transition-duration: 5ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+.Navigation__section_Right_Btns .Sign_In_Btn:hover {
+    background-color: #dbdada;
+    transition-delay: 7ms;
+    transition-duration: 5ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+/* navbar css section end here */
+
+.Box_Container_Section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 50px;
+}
+
+.Box_Containers {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 200vh;
+}
+
+.Box_Containers_Content-Side {
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Content_Container {
+    height: 60%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.Content_Container h1 {
+    display: flex;
+    margin-top: -5px;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.Content_Container_Description p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.Content_Container_Button {
+    display: flex;
+    justify-content: center;
+}
+
+.Content_Container a {
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Box_Containers_Image-Side {
+    width: 50%;
+    display: flex;
+}
+
+#Box_Container_1 {
+    background-color: rgb(235, 129, 165);
+}
+
+#Box_Container_1 .Box_Containers_Image-Side {
+    background: url("images/img.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#Box_Container_1 a:hover {
+    background-color: #d46288;
+}
+
+#Box_Container_2 {
+    background-color: #93CBFE;
+}
+
+#Box_Container_2 .Box_Containers_Image-Side {
+    background: url("images/img2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#Box_Container_2 a:hover {
+    background-color: #68b2f8;
+}
+
+#Box_Container_3 {
+    background-color: #8986F1;
+}
+
+#Box_Container_3 .Box_Containers_Image-Side {
+    background: url("images/img3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#Box_Container_3 a:hover {
+    background-color: #7772fe;
+}
+
+#Box_Container_4 {
+    background-color: #DF7A9C;
+}
+
+#Box_Container_4 .Box_Containers_Image-Side {
+    background: url("images/img4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#Box_Container_4 a:hover {
+    background-color: #d7648a;
+}
+
+@media only screen and (max-width: 800px) {
+    .Navigation__section_Left a {
         display: none;
-        
+
     }
 
-    .Navigation__section_Right button{
+    .Navigation__section_Right button {
         display: none;
     }
 
-    .location{
+    .location {
         display: none;
     }
 
-    .Navigation__section_Right_MenuIcon{
+    .Navigation__section_Right_MenuIcon {
         display: flex;
         width: 30px;
     }
 
-    
+
 }
