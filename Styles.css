@@ -217,6 +217,99 @@ nav {
     background-color: #d7648a;
 }
 
+.LastDescription {
+    color: #2c2c2c;
+    font-weight: 600;
+}
+
+.LastDescription a {
+    color: #2c2c2c;
+}
+
+footer {
+    border-top: 1px solid rgb(201, 201, 201);
+    display: flex;
+    justify-content: center;
+}
+
+.Footer_Navbar {
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 40px;
+    height: 100%;
+}
+
+.Footer_Navbar_Top {
+    display: flex;
+    width: 100%;
+}
+
+.Footer_Navbar_Cards {
+    margin-top: 10px;
+    display: inline-block;
+    width: 190px;
+    height: 80%;
+    text-align: top;
+}
+
+.Footer_Navbar_Cards h2 {
+    font-weight: 400;
+    font-size: larger;
+    margin-bottom: 24px;
+}
+
+.Footer_Navbar_Cards ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Footer_Navbar_Cards li {
+    padding: 0;
+    margin: 20px 0;
+    font-size: large;
+    color: #999999;
+}
+
+.Footer_Navbar_Top_SocialImpact,
+.Footer_Navbar_Top_Careers,
+.Footer_Navbar_Top_ForBussiness,
+.Footer_Navbar_Top_OrderAndPickup {
+    margin-left: 32px;
+}
+
+.Footer_Navbar_Bottom {
+    border-top: 1px solid rgb(201, 201, 201);
+    margin-top: 30px;
+    /* background-color: #68b2f8; */
+    width: 100%;
+}
+
+.Footer_Navbar_Bottom ul {
+    list-style: none;
+}
+
+.Footer_Navbar_Bottom li {
+    display: inline;
+}
+
+.Footer_Navbar_Bottom i {
+    font-size: 30px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.TermsAndConditions li {
+    border-right: 1px dashed black;
+    margin-right: 25px;
+    padding-right: 25px;
+}
+
+.Footer_Navbar_Bottom p {
+    margin-left: 40px;
+    color: rgb(122, 121, 121);
+}
+
 @media only screen and (max-width: 800px) {
     .Navigation__section_Left a {
         display: none;
