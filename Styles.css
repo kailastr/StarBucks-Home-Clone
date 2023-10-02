@@ -252,6 +252,10 @@ footer {
     text-align: top;
 }
 
+.Footer_Navbar_Cards li:hover {
+    color: #2c2c2c;
+}
+
 .Footer_Navbar_Cards h2 {
     font-weight: 400;
     font-size: larger;
@@ -269,6 +273,7 @@ footer {
     margin: 20px 0;
     font-size: large;
     color: #999999;
+    cursor: pointer;
 }
 
 .Footer_Navbar_Top_SocialImpact,
@@ -281,7 +286,6 @@ footer {
 .Footer_Navbar_Bottom {
     border-top: 1px solid rgb(201, 201, 201);
     margin-top: 30px;
-    /* background-color: #68b2f8; */
     width: 100%;
 }
 
@@ -294,15 +298,27 @@ footer {
 }
 
 .Footer_Navbar_Bottom i {
+    border: 5px solid white;
     font-size: 30px;
     margin-right: 10px;
     margin-top: 20px;
+    cursor: pointer;
+}
+
+.Footer_Navbar_Bottom i:hover {
+    background-color: rgb(180, 180, 180);
+    border: 5px solid rgb(180, 180, 180);
+    border-radius: 50%;
 }
 
 .TermsAndConditions li {
     border-right: 1px dashed black;
     margin-right: 25px;
     padding-right: 25px;
+}
+
+.TermsAndConditions li:hover {
+    text-decoration: underline;
 }
 
 .Footer_Navbar_Bottom p {
